@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bloomora Bouquets</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">Bloomora<span>.</span></div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#bouquets">Bouquets</a></li>
+        <li><a href="#custom">Custom Order</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="tag">Premium Handmade Bouquets</p>
+      <h1>Gift Flowers That Feel Special</h1>
+      <p class="hero-text">
+        Beautiful handmade sunflower bouquets, ribbon bouquets, and custom gifts
+        for birthdays, anniversaries, proposals, and special moments.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#bouquets" class="btn primary">View Bouquets</a>
+        <a href="https://wa.me/917846896067?text=Hi, I want to order a bouquet" class="btn secondary">
+          Order on WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?q=80&w=800&auto=format&fit=crop" alt="Yellow bouquet">
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature-card">
+      <h3>Handmade</h3>
+      <p>Every bouquet is crafted with care and premium finishing.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Customizable</h3>
+      <p>Choose flower color, ribbon, message card, and packaging.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Fast Delivery</h3>
+      <p>Same-day and next-day delivery options available.</p>
+    </div>
+  </section>
+
+  <section class="section" id="bouquets">
+    <div class="section-title">
+      <p>Our Collection</p>
+      <h2>Best Selling Bouquets</h2>
+    </div>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1591886960571-74d43a9d4166?q=80&w=800&auto=format&fit=crop" alt="Sunflower bouquet">
+        <div class="product-info">
+          <h3>Sunflower Love</h3>
+          <p>Bright yellow handmade bouquet with premium ribbon wrapping.</p>
+          <div class="price-row">
+            <span>₹299</span>
+            <button onclick="orderNow('Sunflower Love - ₹299')">Order</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?q=80&w=800&auto=format&fit=crop" alt="Rose bouquet">
+        <div class="product-info">
+          <h3>Rose Classic</h3>
+          <p>Elegant rose bouquet for birthdays, love, and surprise gifts.</p>
+          <div class="price-row">
+            <span>₹399</span>
+            <button onclick="orderNow('Rose Classic - ₹399')">Order</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551?q=80&w=800&auto=format&fit=crop" alt="Mixed bouquet">
+        <div class="product-info">
+          <h3>Premium Mix</h3>
+          <p>Luxury mixed flower bouquet with custom gift packaging.</p>
+          <div class="price-row">
+            <span>₹599</span>
+            <button onclick="orderNow('Premium Mix - ₹599')">Order</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="custom-section" id="custom">
+    <div class="custom-content">
+      <p>Custom Bouquet</p>
+      <h2>Want Something Personal?</h2>
+      <p>
+        Tell us your flower color, budget, occasion, message, and delivery location.
+        We will design a bouquet specially for you.
+      </p>
+    </div>
+
+    <form class="order-form" id="orderForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="tel" id="phone" placeholder="Phone Number" required>
+      <select id="occasion" required>
+        <option value="">Select Occasion</option>
+        <option>Birthday</option>
+        <option>Anniversary</option>
+        <option>Proposal</option>
+        <option>Friendship</option>
+        <option>Custom Gift</option>
+      </select>
+      <textarea id="message" placeholder="Your bouquet idea..." required></textarea>
+      <button type="submit">Send Order Request</button>
+    </form>
+  </section>
+
+  <section class="section">
+    <div class="section-title">
+      <p>Why Choose Us?</p>
+      <h2>Made for Beautiful Moments</h2>
+    </div>
+
+    <div class="steps">
+      <div>
+        <span>01</span>
+        <h3>Choose Design</h3>
+        <p>Select your favorite bouquet or ask for a custom one.</p>
+      </div>
+
+      <div>
+        <span>02</span>
+        <h3>Confirm on WhatsApp</h3>
+        <p>We confirm price, design, address, and delivery time.</p>
+      </div>
+
+      <div>
+        <span>03</span>
+        <h3>Get Delivery</h3>
+        <p>Your bouquet will be packed and delivered with care.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contact">
+    <h2>Bloomora<span>.</span></h2>
+    <p>Premium handmade bouquets for every special moment.</p>
+
+    <div class="footer-links">
+      <a href="https://wa.me/917846896067">WhatsApp</a>
+      <a href="#">Instagram</a>
+      <a href="#">Call Now</a>
+    </div>
+
+    <p class="copy">© 2026 Bloomora Bouquets. All rights reserved.</p>
+  </footer>
+
+  <a href="https://wa.me/917846896067?text=Hi, I want to order a bouquet" class="floating-whatsapp">
+    Order Now
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
